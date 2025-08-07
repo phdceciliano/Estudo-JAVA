@@ -1,0 +1,21 @@
+Início
+    Criar array de IMCs
+    Fazer enquanto a opção não for "Sair"
+        Mostrar menu (1 - Calcular, 2 - Histórico, 3 - Sair)
+        Ler opção do usuário
+
+        Caso opção 1:
+            Ler peso e altura
+            Calcular IMC
+            Mostrar IMC e classificação
+            Salvar no array
+
+        Caso opção 2:
+            Mostrar todos os IMCs salvos
+
+        Caso opção 3:
+            Encerrar
+
+        Caso inválido:
+            Mostrar mensagem de erro
+Fim
