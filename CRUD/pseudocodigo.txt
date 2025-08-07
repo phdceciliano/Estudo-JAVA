@@ -1,0 +1,43 @@
+INÍCIO
+    CRIAR vetor ALUNOS com capacidade para 100 nomes
+    INICIAR CONTADOR como 0
+    ENQUANTO verdadeiro FAÇA
+        EXIBIR MENU com opções 1 a 5
+        TENTAR ler OPCAO como número inteiro
+        SE erro, mostrar "Entrada inválida" e CONTINUAR para o menu
+        ESCOLHER OPCAO:
+            CASO 1:
+                SOLICITAR nome
+                ADICIONAR no vetor na posição CONTADOR
+                INCREMENTAR CONTADOR
+                EXIBIR "Aluno cadastrado"
+            CASO 2:
+                SE CONTADOR == 0, mostrar "Nenhum aluno"
+                SENÃO, listar alunos de 1 a CONTADOR
+            CASO 3:
+                SE CONTADOR == 0, mostrar "Nenhum aluno"
+                SENÃO
+                    LISTAR alunos
+                    SOLICITAR número do aluno
+                    SE válido
+                        SOLICITAR novo nome
+                        ATUALIZAR aluno no vetor
+                        EXIBIR "Atualizado"
+                    SENÃO, mostrar "Número inválido"
+            CASO 4:
+                SE CONTADOR == 0, mostrar "Nenhum aluno"
+                SENÃO
+                    LISTAR alunos
+                    SOLICITAR número do aluno
+                    SE válido
+                        REMOVER aluno movendo os outros
+                        DECREMENTAR CONTADOR
+                        EXIBIR "Removido"
+                    SENÃO, mostrar "Número inválido"
+            CASO 5:
+                EXIBIR "Saindo..."
+                ENCERRAR programa
+            CASO DEFAULT:
+                EXIBIR "Opção inválida"
+    FIM ENQUANTO
+FIM
